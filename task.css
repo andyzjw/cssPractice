@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei UI";
+}
+
+.header {
+    width: 100%;
+    min-width: 1200px;
+    height: 75px;
+    background: #07cbc9;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo img {
+    padding-left: 150px;
+    height: 50px;
+    padding-top: 12.5px;
+}
+
+.logo {
+    float: left;
+}
+
+.header .nav {
+    float: right;
+    padding-right: 100px;
+}
+
+.header ul {
+    list-style: none;
+    /*border: solid;*/
+}
+
+.header ul li {
+    float: left;
+    text-align: center;
+    line-height: 75px;
+    width: 100px;
+    height: 75px;
+    font-size: 18px;
+}
+
+.header ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header ul li:hover {
+    background: black;
+}
+
+
+.middle {
+    min-width: 1200px;
+    position: relative;
+}
+
+.m-top {
+    height: 600px;
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: 600px;
+}
+
+.banner-cover {
+    width: 100%;
+    height: 600px;
+    opacity: 0.5;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.form table textarea {
+    padding: 10px;
+}
+
+.form table td {
+    padding: 4px;
+}
+
+.form {
+    /*border:solid;*/
+    float: left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -200px;
+}
+
+.form input, textarea {
+    background: transparent;
+    color: gray;
+    border: gray solid;
+    padding: 10px;
+}
+
+.form table input {
+    margin-top: 10px;
+}
+
+.form table input:hover, .form table textarea:hover {
+    border-color: #07cbc9;
+}
+
+.form table textarea {
+    margin-top: 10px;
+}
+
+#submit input {
+    padding: 10px;
+}
+
+#submit input:hover {
+    background: #07cbc9;
+    cursor: pointer;
+}
+
+.m-middle {
+    width: 100%;
+}
+
+.about-top {
+    width: 700px;
+    margin: 50px auto;
+}
+
+.about-word {
+    text-align: center;
+}
+
+.box {
+    width: 30px;
+    margin: 10px auto;
+    border-bottom: #07cbc9 solid 2px;
+}
+
+.about-word .word2 {
+    width: 400px;
+    margin: auto;
+    padding-bottom: 30px;
+    color: dimgray;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.about-content {
+    position: relative;
+}
+
+.about-content .a-content-img {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content-left-title {
+    font-size: 30px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+}
+/*about右侧内容下部遮盖*/
+.content-cover {
+    width: 360px;
+    height: 200px;
+    background: white;
+    border: solid lightgrey 1px;
+    opacity: 0.5;
+    position: absolute;
+    left: -150px;
+    top: 90px;
+}
+/*about上部分左侧设置*/
+.a-content-left {
+    width: 330px;
+    height: 200px;
+    background: transparent;
+    position: absolute;
+    left: -130px;
+    top: 120px;
+
+}
+
+.a-content-left input {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: black 2px solid;
+    margin-top: 10px;
+}
+
+.a-content-left input:hover {
+    cursor: pointer;
+    background: white;
+    color: black;
+}
+/*about上不右上右下设置*/
+.a-content-right-top, .a-content-right-bottom {
+    border: #07cbc9 solid 1px;
+    width: 110px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/*about上部右侧定位*/
+.a-content-right {
+    position: absolute;
+    right: -150px;
+    top: 0;
+}
+/*about上部分右侧数字格式*/
+.rightnum {
+    font-size: 20px;
+    font-weight: bold;
+}
+/*about下部*/
+.about-bottom {
+    width: 100%;
+    min-width: 1200px;
+    *zoom: 1; /*兼容after设置*/
+}
+/*about图片、简介浮动*/
+.about-bottom img, .brief-introduction {
+    float: left;
+}
+/*简介宽高设置*/
+.brief-introduction {
+    width: 25%;
+    height: 420px;
+    background: #07cbc9;
+    position: relative;
+}
+/*图片宽高*/
+.about-bottom img {
+    width: 25%;
+    height: 420px;
+}
+/*清除浮动*/
+.about-bottom:after {
+    content: ",";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*about下部文字内容的三角符号*/
+.left-triangle{
+    border-top:15px solid rgba(0,0,0,0);
+    border-bottom:15px solid rgba(0,0,0,0);
+    border-right: 25px solid #07cbc6;
+    position: absolute;
+    top:50%;
+    margin-top:-15px;
+    left:-25px;
+}
+.right-triangle{
+    border-top:15px solid rgba(0,0,0,0);
+    border-bottom:15px solid rgba(0,0,0,0);
+    border-left: 25px solid #07cbc6;
+    position: absolute;
+    top:50%;
+    margin-top:-15px;
+    right:-25px;
+}
+/*about下部文字内容设置*/
+.brief{
+    padding:30px;
+    color:white;
+    position: relative;
+}
+.brief .titile{
+    font-size: 30px;
+    padding-bottom:10px;
+}
+.brief .subtitle{
+    line-height: 30px;
+}
+.brief .briefcontent{
+    color:lightgrey;
+    padding-bottom:30px;
+    padding-top:15px;
+}
+/*about下部按钮Explor设置*/
+.brief input{
+    padding: 10px;
+    background: black;
+    color: white;
+    border: black 2px solid;
+    position:absolute;
+    left:50%;
+    margin-left:-36.5px ;
+    margin-top:10px;
+}
+.brief-introduction .brief input:hover {
+    cursor: pointer;
+    background: #07cbc9;
+}
+/*中间下部gallery区域*/
+.m-bottom{
+    min-width: 1200px;
+}
+.gallery{
+    width:1200px;
+    margin:60px auto;
+}
+
+.gallery img{
+width:30%;
+float: left;
+padding:19px;
+}
+.gallery:after{
+    content: ",";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+/*网页尾部*/
+.footer{
+    width:100%;
+    min-width: 1200px;
+    height:60px;
+    background: #07cbc9;
+}
+.footer p{
+    line-height: 60px;
+    text-align: center;
+}
